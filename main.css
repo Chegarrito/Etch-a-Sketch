@@ -1,20 +1,27 @@
-
-.title {
-    background-color: aquamarine;
-    text-align: center;  
+body {
+    text-align: center;
+    color: #141414;
+    font-family: 'Open Sans', sans-serif;
+    padding: 1rem;
 }
-.box {
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    
+}
+
+/*FLEXBOX--------------*/
+
+.row {
     display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .box div {
-    width: 500px;
-    height: 500px;
-    border: 2px solid black;
-  }
-  
-  .columns {
-    border: solid 2px black;
-  }
+    border: solid 2px black;    
+}
+
+.column {
+    background-color: lightgray;
+    padding: 1rem 0;
+    flex: 1;
+    border: solid 2px black;    
+
+}

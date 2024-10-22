@@ -1,7 +1,8 @@
-const boxContainer = document.querySelector(".box");
-
-for (let i = 0; i < 16; i++){
-    const columns = document.createElement("div");
-    columns.setAttribute("class", "columns");
-    boxContainer.appendChild(columns);
+const row = document.querySelector(".row");
+const container = document.querySelector(".container");
+for (let i = 0; i < 4; i++){
+    const column = document.createElement("div");
+    column.setAttribute("class", "column");
+    row.appendChild(column);
+    
 }
