@@ -1,0 +1,16 @@
+
+.title {
+    background-color: aquamarine;
+    text-align: center;  
+}
+.box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .box div {
+    width: 500px;
+    height: 500px;
+    border: 2px solid black;
+  }
