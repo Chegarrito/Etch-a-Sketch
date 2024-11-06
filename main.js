@@ -13,12 +13,20 @@ function crateGrid(rows, columns) {
         }
     }
 }
-    /* for (let i = 0; i < 4; i++){
-    const column = document.createElement("div");
-    column.setAttribute("class", "column");
-    row.appendChild(column);
-    
-} */
+
 let rows = 16;
 let columns = 16;
 crateGrid(rows, columns);
+
+// mouseTarger is a node list. It looks and acts much like an array.
+const mouseTarget = document.querySelectorAll(".column");
+
+
+// we use the .forEach method to iterate through each div/column/grid
+mouseTarget.forEach((grid) => {
+  // and for each one we add a 'mouseenter' listener
+  grid.addEventListener("mouseenter", () => {
+    // change the color of the grid to red
+    grid.style.backgroundColor = "red";
+});
+});
