@@ -28,8 +28,9 @@ function calculateGridPadding(gridSize){
 
 let gridSize = prompt("Enter the size of the grid", "16");
 
-if (gridSize === null) {
+if (gridSize === null || gridSize < 1 || gridSize > 100 ) {
     gridSize = 16;
+    alert("ONLY NUMBERS BETWEEN 0 - 100");
 }
 
 
