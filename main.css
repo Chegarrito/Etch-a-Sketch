@@ -6,9 +6,9 @@ body {
 }
 
 .container {
-    max-width: 500px;
+    max-width: 960px;
     margin: 0 auto;
-    height: 500px;
+    height: 960px;
     
     
 }
@@ -17,16 +17,12 @@ body {
 
 .row {
     display: flex;
-    border: solid 2px black;    
+    border: solid 1px black;    
 }
 
 .column {
     background-color: lightgray;
-    padding: 1rem 0;
     flex: 1;
-    border: solid 2px black;    
+    border: solid 1px black;    
 
-}
-.changeColor{
-    background-color: red;
 }
