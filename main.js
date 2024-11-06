@@ -27,23 +27,29 @@ function calculateGridPadding(gridSize){
 }
 
 let gridSize = prompt("Enter the size of the grid", "16");
+let btn = document.querySelector(".button-7");
 
 if (gridSize === null || gridSize < 1 || gridSize > 100 ) {
     gridSize = 16;
     alert("ONLY NUMBERS BETWEEN 0 - 100");
 }
 
-
 crateGrid(gridSize);
+
+btn.addEventListener("click", ()=>{
+    // reload the current page
+    window.location.reload();
+
+});
+
 // mouseTarger is a node list. It looks and acts much like an array.
 const mouseTarget = document.querySelectorAll(".column");
-
 
 // we use the .forEach method to iterate through each div/column/grid
 mouseTarget.forEach((grid) => {
   // and for each one we add a 'mouseenter' listener
   grid.addEventListener("mouseenter", () => {
     // change the color of the grid to red
-    grid.style.backgroundColor = "red";
+    grid.style.backgroundColor = "black";
 });
 });
